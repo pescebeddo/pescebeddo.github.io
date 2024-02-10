@@ -1,0 +1,156 @@
+div.button {
+	width: 400px;
+	height: 100px;
+	border-radius: 10px;
+	background-color: black;
+	transition: width 1s, height 1s, transform 1s, border 1s;
+}
+
+div.SN {
+	width: 900px;
+	height: 70px;
+	background-color: black;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	
+}
+img{
+	transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+html{
+	font-family: 'Josefin Sans', sans-serif;
+}
+button{
+	color: white;
+	background-color: black;
+	border: solid 2px white;
+	border-radius: 2px;
+	transition: width 1s, height 1s, transform 1s;
+}
+button:hover{
+	color: white;
+	background-color: blue;
+	border: solid 2px white;
+	border-radius: 2px;
+	transform: scale(1.5);
+}
+div.button:hover{
+	height: 200px;
+	border: 1px solid white;
+
+}
+div.black {
+	width: 400px;
+	height: 100px;
+	border-radius: 10px;
+	color: white;
+	background-color: blue;
+	transition: width 1s, height 1s, transform 1s, border 1s;
+	height: 10%;
+	border: solid 2px white;
+}
+div.gb {
+	width: 400px;
+	height: 10px;
+	border-radius: 10px;
+	color: white;
+	background-color: black;
+	transition: width 1s, height 1s, transform 1s, border 1s;
+	height: 100%;
+	border: solid 2px white;
+}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+	color: orange;
+	background-color: transparent;
+}
+a:active {
+  color: white;
+  background-color: blue;
+}
+body {
+
+  background-image: url("background.jpg");
+	background-position: center;
+
+}
+@keyframes background_animation{
+    0% {background-position: right;}
+    25%{background-position: bottom;}
+    50%{background-position: left;}
+    75%{background-position: top;}
+    100%{background-position: right;}
+}
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+  
+
+  /* When the animation is finished, start again 
+  animation-iteration-count: 1; */
+    opacity: 0;
+}
+img:not(:hover) {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake2 0.5s;
+  
+
+  /* When the animation is finished, start again 
+  animation-iteration-count: 1; */
+
+}
+
+ /*@keyframes shake {
+  0% { transform: translate(2px, 2px); }
+  10% { transform: translate(-2px, -4px); }
+  20% { transform: translate(-6px, 0px); }
+  30% { transform: translate(6px, 4px); }
+  40% { transform: translate(2px, -2px); }
+  50% { transform: translate(-2px, 4px); }
+  60% { transform: translate(-6px, 2px); }
+  70% { transform: translate(6px, 2px); }
+  80% { transform: translate(-2px, -2px); }
+  90% { transform: translate(2px, 4px); }
+  100% { transform: translate(2px, -4px); }
+}*/
+
+@keyframes shake {
+  0% { opacity: 0.9; }
+  10% { opacity: 0.8; }
+  20% { opacity: 0.7; }
+  30% { opacity: 0.6; }
+  40% { opacity: 0.5; }
+  50% { opacity: 0.4; }
+  60% { opacity: 0.3; }
+  70% { opacity: 0.2; }
+  80% { opacity: 0.1; }
+  90% { opacity: 0; }
+  100% { opacity: 0; }
+
+   
+}
+@keyframes shake2 {
+  100% { opacity: 0.9; }
+  90% { opacity: 0.8; }
+  80% { opacity: 0.7; }
+  70% { opacity: 0.6; }
+  60% { opacity: 0.5; }
+  50% { opacity: 0.4; }
+  40% { opacity: 0.3; }
+  30% { opacity: 0.2; }
+  20% { opacity: 0.1; }
+  10% { opacity: 0; }
+  0% { opacity: 0; }
+
+   
+}
